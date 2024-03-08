@@ -1,0 +1,27 @@
+.wrapper {
+	margin-top: 10%;
+	border: 2px solid black;
+	max-width: 1720px;
+	display: flex;
+	gap: 50px;
+	position: relative;
+}
+
+/* .player .filter_container {
+	background-color: #161c32;
+	border-radius: 30px;
+	height: 566px;
+	width: 693px;
+}
+
+.filter_panel {
+	padding: 10px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.filter_position {
+	display: flex;
+	flex-direction: column;
+} */

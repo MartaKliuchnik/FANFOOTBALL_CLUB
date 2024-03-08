@@ -1,0 +1,17 @@
+.img_container {
+	width: 987px;
+	height: 566px;
+}
+
+.img_field {
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	object-fit: cover;
+}
+
+.img_player {
+	position: absolute;
+	width: 63px;
+	height: 76px;
+}
