@@ -1,10 +1,22 @@
 .wrapper {
 	margin-top: 10%;
-	border: 2px solid black;
+	/* border: 2px solid black; */
 	max-width: 1720px;
 	display: flex;
 	gap: 50px;
-	position: relative;
+}
+
+.containerField {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
 }
 
 /* .player .filter_container {

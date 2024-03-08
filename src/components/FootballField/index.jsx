@@ -22,12 +22,8 @@ const playerPositions = [
 
 export default function FootballField() {
 	return (
-		<div className={styles.img_container}>
-			<img
-				className={styles.img_field}
-				src={footballField}
-				alt='football_field'
-			/>
+		<div className={styles.imgContainer}>
+			<img className={styles.imgField} src={footballField} />
 
 			{playerPositions.map((position, index) => (
 				<img
@@ -35,7 +31,7 @@ export default function FootballField() {
 					alt='player'
 					key={index}
 					style={{ left: position.left, top: position.top }}
-					className={styles.img_player}
+					className={styles.imgPlayer}
 				/>
 			))}
 		</div>
