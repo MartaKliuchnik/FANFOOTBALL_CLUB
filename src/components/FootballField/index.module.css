@@ -16,4 +16,9 @@
 	position: absolute;
 	width: 63px;
 	height: 76px;
+	transition: all 0.5s;
+}
+
+.imgPlayer:hover {
+	transform: scale(1.2);
 }
