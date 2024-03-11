@@ -31,7 +31,6 @@ export default function TeamPlayerMap() {
 					))}
 				</div>
 			</div>
-
 			{/*FILTER CONTAINER*/}
 			<div className={styles.containerFilterPlayer}>
 				<PlayersInfoPanel />

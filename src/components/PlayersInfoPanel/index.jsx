@@ -3,6 +3,7 @@ import { tableHeader, filterList } from '../../data/index';
 import { DownOutlined, UpOutlined } from '@ant-design/icons';
 import { playersList } from '../../data/players';
 import player_img from '../../assets/player_img.png';
+import CommandFilter from '../CommandFilter';
 
 export default function PlayersInfoPanel() {
 	return (
@@ -52,6 +53,10 @@ export default function PlayersInfoPanel() {
 						))}
 					</tbody>
 				</table>
+			</div>
+
+			<div className={styles.chosenFilterContainer}>
+				<CommandFilter />
 			</div>
 		</div>
 	);
