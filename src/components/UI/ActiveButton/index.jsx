@@ -1,5 +1,5 @@
 import styles from './index.module.css';
 
-export default function ActiveButton({ children }) {
-	return <button>{children}</button>;
+export default function ActiveButton({ children, ...props }) {
+	return <button {...props}>{children}</button>;
 }
