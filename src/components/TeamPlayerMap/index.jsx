@@ -33,9 +33,13 @@ export default function TeamPlayerMap() {
 					))}
 				</div>
 			</div>
-
 			{/*FILTER CONTAINER*/}
-			<PlayersInfoPanel />
+			<div className={styles.containerFilterPlayer}>
+				<PlayersInfoPanel />
+				<ActiveButton style={{ width: '187px', backgroundColor: '#132152' }}>
+					Далее
+				</ActiveButton>
+			</div>
 		</div>
 		</div>
 	);

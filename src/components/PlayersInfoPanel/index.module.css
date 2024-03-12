@@ -4,6 +4,8 @@
 	border-radius: 30px;
 	height: 566px;
 	width: 693px;
+
+	position: relative;
 }
 
 .filterPanel {
@@ -101,4 +103,11 @@ table th:nth-child(5),
 table td:nth-child(5) {
 	text-align: center;
 	width: 130px;
+}
+
+.chosenFilterContainer {
+	position: absolute;
+	top: 83px;
+	left: 142px;
+	/* display: none; */
 }
