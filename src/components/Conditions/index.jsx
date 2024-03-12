@@ -1,25 +1,25 @@
 import '../../fonts/fonts.css';
 import styles from './index.module.css';
 
-const activeButtonTitle = [
-	{
-		id: 1,
-		title: 'Создать команду',
-	},
-	{
-		id: 2,
-		title: 'Призы',
-	},
-	{
-		id: 3,
-		title: 'Правила',
-	},
+// const activeButtonTitle = [
+// 	{
+// 		id: 1,
+// 		title: 'Создать команду',
+// 	},
+// 	{
+// 		id: 2,
+// 		title: 'Призы',
+// 	},
+// 	{
+// 		id: 3,
+// 		title: 'Правила',
+// 	},
 
-    {
-		id: 4,
-		title: 'Отзывы',
-	},
-];
+//     {
+// 		id: 4,
+// 		title: 'Отзывы',
+// 	},
+// ];
 
 export default function Conditions() {
     return (
