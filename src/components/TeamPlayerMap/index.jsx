@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './index.module.css';
 import FootballField from '../FootballField';
-import ActiveButton from '../UI/ActiveButton';
 import PlayersInfoPanel from '../PlayersInfoPanel';
+import ActiveButton from '../UI/ActiveButton';
+import styles from './index.module.css';
 
 const activeButtonTitle = [
 	{
@@ -20,7 +20,9 @@ const activeButtonTitle = [
 ];
 
 export default function TeamPlayerMap() {
-	return (
+	return ( 
+		<div className={styles.container}>
+
 		<div className={styles.wrapper}>
 			<div className={styles.containerField}>
 				<FootballField />
@@ -34,6 +36,7 @@ export default function TeamPlayerMap() {
 
 			{/*FILTER CONTAINER*/}
 			<PlayersInfoPanel />
+		</div>
 		</div>
 	);
 }

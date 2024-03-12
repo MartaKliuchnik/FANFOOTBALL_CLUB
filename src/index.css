@@ -7,4 +7,12 @@
 body {
 	margin: 0 auto;
 	max-width: 1920px;
+	height: 100%;
+	line-height: normal;
+	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
+	text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+    background-color: #212A49;
 }
