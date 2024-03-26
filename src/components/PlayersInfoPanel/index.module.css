@@ -108,6 +108,30 @@ table td:nth-child(5) {
 .chosenFilterContainer {
 	position: absolute;
 	top: 83px;
-	left: 142px;
-	/* display: none; */
+	width: calc(100% - 20px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content {
+	display: none;
+}
+
+.contentActive {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.icon {
+	transition: .3s all;
+}
+
+.filterPosition:hover .icon {
+	transform: rotate(180deg);
+}
+
+.iconActive {
+	transform: rotate(180deg);
 }

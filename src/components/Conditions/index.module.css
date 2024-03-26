@@ -12,49 +12,10 @@
     justify-content: space-between
 }
 
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    cursor: pointer;
-    height: 50px;
-    width: 147px;
-    padding: 0;
-    border: none;
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-    line-height: 250%;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 16px;
-    color: #fff;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-    background: #1c3486;
-    transition: .3s all;
-}
-
-.btn:hover {
-	background-color: #8897cc;
-}
-
 .buttonLong {
-    width: 253px;
-    background: #8897cc;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    border: none;
-    font-weight: 700;
-    font-size: 16px;
-    transition: .3s all;
-    color: #fff;
-    font-family: "TT Hoves", sans-serif;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: #8897CC
 }
 
 .buttonLong:hover {
-	background-color: #0038FF;
+    background-color: #0038FF
 }

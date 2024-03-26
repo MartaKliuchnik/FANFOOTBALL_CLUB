@@ -1,0 +1,97 @@
+.wrapper {
+    /* position: absolute; */
+    /* top: 78px; */
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    padding: 15px 15px 20px 15px;
+    width: 100%;
+    background: #e3e5ea;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.playersPosition {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.playerPosition {
+    border: 1px solid #d2d6e1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: .3s all;
+    width: 120px;
+    height: 116px;
+}
+
+.playerPosition:hover {
+    background-color: #1C3486;
+    color: #E3E5EA !important;
+}
+
+.playerName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D2D6E1;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    font-family: "TT Hoves", sans-serif;
+    transition: .3s all;
+    color: #5e5e70;
+    background: transparent;
+}
+
+.playerPosition:hover .playerName {
+    color: #E3E5EA;
+}
+
+.playerPositionName {
+    font-weight: 700;
+    font-family: "TT Hoves", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    transition: .3s all;
+    color: #5e5e70;
+}
+
+.playerPosition:hover .playerPositionName {
+    color: #E3E5EA;
+}
+
+.buttonContainer {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 187px;
+}
+
+.buttonContainer > button {
+    background-color: #132152;
+    width: 147px;
+    height: 30px;
+}
+
+.buttonContainer > button:first-child {
+    background-color: #8897CC
+}
+
+.buttonContainer > button:hover {
+    background-color: #2543AA;
+}
+
+.buttonContainer > button:first-child:hover {
+    background-color: #0038FF;
+}

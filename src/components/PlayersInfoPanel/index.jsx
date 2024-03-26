@@ -1,19 +1,48 @@
-import styles from './index.module.css';
-import { tableHeader, filterList } from '../../data/index';
-import { DownOutlined, UpOutlined } from '@ant-design/icons';
-import { playersList } from '../../data/players';
+import { DownOutlined } from '@ant-design/icons';
+import { useEffect, useRef, useState } from 'react';
 import player_img from '../../assets/player_img.png';
+import { filterList, tableHeader } from '../../data/index';
+import { playersList } from '../../data/players';
 import CommandFilter from '../CommandFilter';
+import MoneyFilter from '../MoneyFilter';
+import PlayersPosition from '../PlayersPosition';
+import styles from './index.module.css';
 
 export default function PlayersInfoPanel() {
+	const [active, setActive] = useState(null);
+	const tabRef = useRef(null)
+	
+	const openTab = (e) => {
+        const id = +e.target.getAttribute('my_key');
+        setActive((prevActive) => (prevActive === id ? null : id));
+    };
+	
+    useEffect(() => {
+        const handleClickOutside = (e) => {
+            if (tabRef.current && !tabRef.current.contains(e.target)) {
+                setActive(null);
+            }
+        };
+
+        document.addEventListener("click", handleClickOutside);
+        return () => {
+            document.removeEventListener("click", handleClickOutside);
+        };
+    }, []);
+	
 	return (
-		<div className={styles.filterContainer}>
+			<div className={styles.filterContainer} ref={tabRef}>
 			<div className={styles.filterPanel}>
 				{filterList.map(({ title, option, id }) => (
-					<div className={styles.filterPosition} key={id}>
+					<div className={styles.filterPosition} 
+					key={id}
+					my_key={id}
+					onClick={openTab}>
 						<div className={styles.titleContainer}>
 							<label htmlFor='filterDropdown'>{title}</label>
-							<DownOutlined />
+							<div className={active === id ? styles.iconActive : styles.icon}>
+								<DownOutlined />
+							</div>
 							{/* <UpOutlined /> */}
 						</div>
 						{/* <select value='position'>
@@ -56,7 +85,15 @@ export default function PlayersInfoPanel() {
 			</div>
 
 			<div className={styles.chosenFilterContainer}>
-				<CommandFilter />
+				<div className={active === 1 ? styles.contentActive : styles.content}>
+					<PlayersPosition/>
+				</div>
+				<div className={active === 2 ? styles.contentActive : styles.content}>
+					<CommandFilter />
+				</div>
+				<div className={active === 3 ? styles.contentActive : styles.content}>
+					<MoneyFilter />
+				</div>
 			</div>
 		</div>
 	);

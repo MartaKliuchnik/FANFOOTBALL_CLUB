@@ -23,24 +23,24 @@ export default function TeamPlayerMap() {
 	return ( 
 		<div className={styles.container}>
 
-		<div className={styles.wrapper}>
-			<div className={styles.containerField}>
-				<FootballField />
+			<div className={styles.wrapper}>
+				<div className={styles.containerField}>
+					<FootballField />
 
-				<div className={styles.buttonContainer}>
-					{activeButtonTitle.map(({ title, id }) => (
-						<ActiveButton key={id}>{title}</ActiveButton>
-					))}
+					<div className={styles.buttonContainer}>
+						{activeButtonTitle.map(({ title, id }) => (
+							<ActiveButton key={id}>{title}</ActiveButton>
+						))}
+					</div>
+				</div>
+				{/*FILTER CONTAINER*/}
+				<div className={styles.containerFilterPlayer}>
+					<PlayersInfoPanel />
+					<ActiveButton style={{ width: '187px', backgroundColor: '#132152' }}>
+						Далее
+					</ActiveButton>
 				</div>
 			</div>
-			{/*FILTER CONTAINER*/}
-			<div className={styles.containerFilterPlayer}>
-				<PlayersInfoPanel />
-				<ActiveButton style={{ width: '187px', backgroundColor: '#132152' }}>
-					Далее
-				</ActiveButton>
-			</div>
-		</div>
 		</div>
 	);
 }

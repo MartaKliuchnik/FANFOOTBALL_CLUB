@@ -36,44 +36,6 @@
     gap: 40px;
 }
 
-.button {
-    width: 147px;
-    background: #1c3486;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    border: none;
-    font-weight: 700;
-    font-size: 16px;
-    transition: .3s all;
-    color: #fff;
-    font-family: "TT Hoves", sans-serif;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-.button:hover {
-	background-color: #8897cc;
-}
-
-.buttonLong {
-    width: 253px;
-    background: #8897cc;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    border: none;
-    font-weight: 700;
-    font-size: 16px;
-    transition: .3s all;
-    color: #fff;
-    font-family: "TT Hoves", sans-serif;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-}
-
 .buttonLong:hover {
 	background-color: #0038FF;
 }
@@ -92,4 +54,12 @@
     text-align: center;
     color: #fff;
     font-family: "TT Hoves", sans-serif
+}
+
+.buttonLong {
+    background-color: #8897CC
+}
+
+.buttonLong:hover {
+    background-color: #0038FF
 }
