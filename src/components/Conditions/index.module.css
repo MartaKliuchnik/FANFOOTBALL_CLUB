@@ -1,21 +1,21 @@
 .conditions {
-    background: #161C32;
-    padding: 20px 0;
+  background: var(--secondary-bg-color);
+  padding: 20px 0;
 }
 
 .conditions .conditionsWrapper {
-    max-width: 1174px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between
+  max-width: 1174px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .buttonLong {
-    background-color: #8897CC
+  background-color: var(--light-button-color);
 }
 
 .buttonLong:hover {
-    background-color: #0038FF
+  background-color: var(--light-button-hover-color);
 }
