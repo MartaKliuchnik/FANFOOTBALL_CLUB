@@ -1,18 +1,35 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0 auto;
-	max-width: 1920px;
-	height: 100%;
-	line-height: normal;
-	scroll-behavior: smooth;
-	text-rendering: optimizeLegibility;
-	text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
-	-webkit-tap-highlight-color: transparent;
-    background-color: #212A49;
+  margin: 0 auto;
+  max-width: 1920px;
+  height: 100%;
+  line-height: normal;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--primary-bg-color);
+}
+
+:root {
+  /* BG-colors */
+  --primary-bg-color: #212a49;
+  --secondary-bg-color: #161c32;
+  --tab-bg-color: #e3e5ea;
+
+  /* BUTTON-colors */
+  --light-button-color: #8897cc;
+  --primary-button-color: #1c3486;
+  --dark-button-color: rgb(19, 33, 82);
+
+  /* HOVER-colors */
+  --light-button-hover-color: #0038ff;
+  --primary-button-hover-color: #94abfa;
+  --dark-button-hover-color: #2543aa;
 }
