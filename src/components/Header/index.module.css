@@ -1,61 +1,63 @@
 .container {
-  max-width: 1750px;
-  margin: 0 auto;
-  padding: 0 15px;
+	max-width: 1750px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .header {
-  padding: 8px 0;
+	padding: 8px 0;
 }
 
 .headerWrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	height: 210px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.headerLeft {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 67px;
+.headerLogo {
+	width: 415px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 }
 
 .title {
-  font-weight: 400;
-  font-size: 30px;
-  color: #fff;
-  text-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+	font-weight: 400;
+	font-size: 20px;
+	color: #ffffff;
 }
 
 .headerRight {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 40px;
 }
 
 .advantages {
-  padding: 15px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+	padding: 15px 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .advantages .advantagesItem {
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-  color: #fff;
-  font-family: "TT Hoves", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	font-family: 'TT Hoves', sans-serif;
 }
 
 .buttonLong {
-  background-color: var(--light-button-color);
+	background-color: var(--light-button-color);
 }
 
 .buttonLong:hover {
-  background-color: var(--light-button-hover-color);
+	background-color: var(--light-button-hover-color);
 }
