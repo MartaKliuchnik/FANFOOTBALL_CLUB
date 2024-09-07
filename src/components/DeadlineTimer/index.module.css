@@ -1,0 +1,8 @@
+.deadlineTimer {
+	background-color: var(--light-button-color);
+	width: 253px;
+}
+
+.deadlineTimer:hover {
+	background-color: var(--light-button-color);
+}

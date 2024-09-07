@@ -1,21 +1,42 @@
 .conditions {
-  background: var(--secondary-bg-color);
-  padding: 20px 0;
+	background: var(--secondary-bg-color);
+	padding: 0 15px;
+	height: 90px;
+	display: flex;
+	align-items: center;
 }
 
-.conditions .conditionsWrapper {
-  max-width: 1174px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+.conditionsWrapper {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
 }
 
-.buttonLong {
-  background-color: var(--light-button-color);
+.leftGroup,
+.centerGroup,
+.rightGroup {
+	display: flex;
+	align-items: center;
 }
 
-.buttonLong:hover {
-  background-color: var(--light-button-hover-color);
+.centerGroup {
+	margin: 0 226px;
+	gap: 145px;
+}
+
+.createTeam {
+	background-color: var(--light-button-color);
+	margin-right: 20px;
+}
+
+.createTeam:hover {
+	background-color: var(--light-button-hover-color);
+}
+
+.mainButton {
+	background-color: var(--dark-button-color);
+}
+
+.mainButton:hover {
+	background-color: var(--dark-button-hover-color);
 }

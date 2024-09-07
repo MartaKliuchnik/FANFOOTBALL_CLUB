@@ -1,0 +1,28 @@
+.container {
+	background-color: var(--primary-button-color);
+	color: white;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	width: 450px;
+	height: 188px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.statsList {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.statItem {
+	display: flex;
+	font-size: 18px;
+	font-weight: 400;
+	justify-content: center;
+}
+
+.statLabel {
+	margin-right: 0.1rem;
+}
