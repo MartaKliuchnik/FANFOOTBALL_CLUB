@@ -1,0 +1,34 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-left: 100px;
+	color: #ffffff;
+	font-size: 20px;
+	width: 1720px;
+}
+
+.navContainer {
+	font-size: 32px;
+	font-weight: 400;
+	display: flex;
+	gap: 36px;
+}
+
+.navContainer > a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* .navContainer > a {
+	color: #a6aab6;
+	text-decoration: none;
+} */
+/* .navContainer > a.active {
+	color: #ffffff;
+} */
+
+.panelsContainer {
+	display: flex;
+	flex-direction: column;
+}
