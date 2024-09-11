@@ -1,0 +1,39 @@
+import CreateTeamPage from '../Pages/CreateTeamPage/index.jsx';
+import HomePage from '../Pages/HomePage/index.jsx';
+import PrizePage from '../Pages/PrizePage/index.jsx';
+import ReviewsPage from '../Pages/ReviewsPage/index.jsx';
+import RulesPage from '../Pages/RulesPage/index.jsx';
+
+export const routes = [
+	{
+		path: '/',
+		element: HomePage,
+		label: 'Создать команду',
+		width: '253px',
+		className: 'createTeam',
+	},
+	{
+		path: '/prizes',
+		element: PrizePage,
+		label: 'Призы',
+		width: '147px',
+		className: 'mainButton',
+	},
+	{
+		path: '/rules',
+		element: RulesPage,
+		label: 'Правила',
+		width: '147px',
+		className: 'mainButton',
+	},
+	{
+		path: '/reviews',
+		element: ReviewsPage,
+		label: 'Отзывы',
+		width: '147px',
+		className: 'mainButton',
+	},
+];
+
+export const getRouterByPath = (path) =>
+	routes.find((route) => route.path === path);

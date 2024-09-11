@@ -1,18 +1,20 @@
 import { Route, Routes } from 'react-router-dom';
-import HomePage from '../../Pages/HomePage';
 import { Context } from '../../context';
-import PrizePage from '../../Pages/PrizePage';
 import Header from '../Header';
 import Conditions from '../Conditions';
+import { routes } from '../../routes/index';
+import HomePage from '../../Pages/HomePage';
+
 function App() {
 	return (
 		<Context.Provider value={{}}>
 			<Header />
 			<Conditions />
 			<Routes>
-				{/* <Route path="/" element={<Layout />}/> */}
 				<Route path='/' element={<HomePage />} />
-				<Route path='/prize-page' element={<PrizePage />} />
+				{routes.map(({ path, element: Element }) => (
+					<Route key={path} path={path} element={<Element />} />
+				))}
 			</Routes>
 		</Context.Provider>
 	);

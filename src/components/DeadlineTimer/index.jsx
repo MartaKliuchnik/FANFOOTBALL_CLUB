@@ -36,9 +36,11 @@ export default function DeadlineTimer({ initialTime }) {
 	}, []);
 
 	return (
-		<ActiveButton className={styles.deadlineTimer}>
-			До дедлайна осталось:
-			<br /> {time}
-		</ActiveButton>
+		<div className={styles.deadlineTimer}>
+			<div style={{ textAlign: 'center' }}>
+				До дедлайна осталось:
+				<br /> {time}
+			</div>
+		</div>
 	);
 }

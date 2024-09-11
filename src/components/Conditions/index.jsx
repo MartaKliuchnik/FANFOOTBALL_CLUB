@@ -1,33 +1,7 @@
 import DeadlineTimer from '../DeadlineTimer';
 import ActiveButton from '../UI/ActiveButton';
 import styles from './index.module.css';
-
-const buttonData = [
-	{
-		id: 1,
-		title: 'Создать команду',
-		width: '253px',
-		className: styles.createTeam,
-	},
-	{
-		id: 2,
-		title: 'Призы',
-		width: '147px',
-		className: styles.mainButton,
-	},
-	{
-		id: 3,
-		title: 'Правила',
-		width: '147px',
-		className: styles.mainButton,
-	},
-	{
-		id: 4,
-		title: 'Отзывы',
-		width: '147px',
-		className: styles.mainButton,
-	},
-];
+import { routes } from '../../routes';
 
 export default function Conditions() {
 	return (
@@ -35,16 +9,23 @@ export default function Conditions() {
 			<div className={styles.container}>
 				<div className={styles.conditionsWrapper}>
 					<div className={styles.leftGroup}>
-						{buttonData.slice(0, 1).map(({ title, id, width, className }) => (
-							<ActiveButton key={id} className={className} style={{ width }}>
-								{title}
-							</ActiveButton>
-						))}
+						<ActiveButton
+							to={routes[0].path}
+							className={styles[routes[0].className]}
+							style={{ width: routes[0].width }}
+						>
+							{routes[0].label}
+						</ActiveButton>
 					</div>
 					<div className={styles.centerGroup}>
-						{buttonData.slice(1).map(({ title, id, width, className }) => (
-							<ActiveButton key={id} className={className} style={{ width }}>
-								{title}
+						{routes.slice(1).map((route) => (
+							<ActiveButton
+								key={route.path}
+								to={route.path}
+								className={styles[route.className]}
+								style={{ width: route.width }}
+							>
+								{route.label}
 							</ActiveButton>
 						))}
 					</div>

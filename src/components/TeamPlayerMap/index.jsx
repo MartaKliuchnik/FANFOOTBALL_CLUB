@@ -20,16 +20,17 @@ const activeButtonTitle = [
 ];
 
 export default function TeamPlayerMap() {
-	return ( 
+	return (
 		<div className={styles.container}>
-
 			<div className={styles.wrapper}>
 				<div className={styles.containerField}>
 					<FootballField />
 
 					<div className={styles.buttonContainer}>
 						{activeButtonTitle.map(({ title, id }) => (
-							<ActiveButton key={id}>{title}</ActiveButton>
+							<div style={{ textAlign: 'center' }}>
+								<ActiveButton key={id}>{title}</ActiveButton>
+							</div>
 						))}
 					</div>
 				</div>
