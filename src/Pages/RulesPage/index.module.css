@@ -9,24 +9,24 @@
 }
 
 .navContainer {
-	font-size: 32px;
-	font-weight: 400;
 	display: flex;
 	gap: 36px;
 }
 
-.navContainer > a {
+.navContainer > button {
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	color: #a6aab6;
+	text-decoration: none;
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.navContainer > button.active {
 	color: #ffffff;
 	text-decoration: none;
 }
-
-/* .navContainer > a {
-	color: #a6aab6;
-	text-decoration: none;
-} */
-/* .navContainer > a.active {
-	color: #ffffff;
-} */
 
 .panelsContainer {
 	display: flex;

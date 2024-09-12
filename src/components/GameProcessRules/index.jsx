@@ -341,7 +341,6 @@ export default function GameProcessRules() {
 					>
 						почту
 					</a>
-					.
 				</p>
 			</RuleCard>
 		</div>

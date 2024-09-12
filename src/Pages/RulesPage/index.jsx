@@ -1,24 +1,33 @@
-import { NavLink } from 'react-router-dom';
 import styles from './index.module.css';
 import GameProcessRules from '../../components/GameProcessRules';
+import { useState } from 'react';
+import LegalInformation from '../../components/LegalInformation';
 
 export default function RulesPage() {
-	const checkClass = ({ isActive }) => (isActive ? styles.active : '');
+	const [activePanel, isActivePanel] = useState('gameRules');
+	const checkClass = (panel) => {
+		return activePanel === panel ? styles.active : '';
+	};
 
 	return (
 		<div className={styles.container}>
 			<div className={styles.navContainer}>
-				<NavLink to='/game-process' className={checkClass}>
+				<button
+					onClick={() => isActivePanel('gameRules')}
+					className={checkClass('gameRules')}
+				>
 					Игровой процесс
-				</NavLink>
-				{/* <NavLink to='/legal-information' className={checkClass}>
+				</button>
+				<button
+					onClick={() => isActivePanel('legalInfo')}
+					className={checkClass('legalInfo')}
+				>
 					Юридическая информация
-				</NavLink> */}
+				</button>
 			</div>
 			<div className={styles.panelsContainer}>
-				<GameProcessRules />
-
-				{/* <LegalInformation /> */}
+				{activePanel === 'gameRules' && <GameProcessRules />}
+				{activePanel === 'legalInfo' && <LegalInformation />}
 			</div>
 		</div>
 	);
