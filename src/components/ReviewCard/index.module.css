@@ -1,0 +1,52 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	padding: 50px;
+	width: 1133px;
+	height: 370px;
+	flex-shrink: 0;
+	position: relative;
+}
+
+.content {
+	line-height: 2.5rem;
+	padding-right: 125px;
+	font-size: 20px;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	flex-grow: 1;
+	overflow-y: auto;
+}
+
+.footer {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-top: 20px;
+}
+
+.author {
+	font-size: 32px;
+	text-align: right;
+}
+
+.quoteTop,
+.quoteBottom {
+	width: 98px;
+	height: 65px;
+	position: absolute;
+}
+
+.quoteTop {
+	top: -40px;
+	right: 106px;
+}
+
+.quoteBottom {
+	bottom: -40px;
+	left: 106px;
+}
