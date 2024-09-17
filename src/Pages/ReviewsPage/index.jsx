@@ -10,6 +10,7 @@ export default function ReviewsPage() {
 					<ReviewCard
 						key={review.id}
 						backgroundColor={review.backgroundColor}
+						color={review.color}
 						content={review}
 					/>
 				))}

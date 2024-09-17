@@ -7,6 +7,7 @@
 	border: none;
 	text-decoration: none;
 	font-size: 16px;
+	font-weight: 700;
 	color: white;
 	box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.5);
 	cursor: pointer;
@@ -17,5 +18,5 @@
 }
 
 .buttonLink:hover {
-	background-color: var(--primary-button-hover-color);
+	background-color: var(--hover-color, #94abfa) !important;
 }

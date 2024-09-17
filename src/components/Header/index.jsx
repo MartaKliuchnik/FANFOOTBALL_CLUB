@@ -7,12 +7,14 @@ const activeButtonTitle = [
 		id: 1,
 		title: 'Войти',
 		width: '147px',
+		hoverColor: '#94ABFA',
 	},
 	{
 		id: 2,
 		title: 'Присоединиться',
 		width: '253px',
 		backgroundColor: '#8897CC',
+		hoverColor: '#0038FF',
 		buttonLong: 'buttonLong',
 	},
 ];
@@ -28,11 +30,12 @@ export default function Header() {
 						<p className={styles.title}>Your game. Your team. Your win.</p>
 					</div>
 					<div className={styles.headerRight}>
-						{activeButtonTitle.map(({ title, id, width }) => (
+						{activeButtonTitle.map(({ title, id, width, hoverColor }) => (
 							<ActiveButton
 								className={id == 2 ? styles.buttonLong : null}
 								style={{ width }}
 								key={id}
+								hoverColor={hoverColor}
 							>
 								{title}
 							</ActiveButton>

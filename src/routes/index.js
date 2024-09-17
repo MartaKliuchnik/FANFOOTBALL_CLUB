@@ -11,6 +11,7 @@ export const routes = [
 		label: 'Создать команду',
 		width: '253px',
 		className: 'createTeam',
+		hoverColor: '#0038FF',
 	},
 	{
 		path: '/prizes',
@@ -18,6 +19,7 @@ export const routes = [
 		label: 'Призы',
 		width: '147px',
 		className: 'mainButton',
+		hoverColor: '#94ABFA',
 	},
 	{
 		path: '/rules',
@@ -25,6 +27,7 @@ export const routes = [
 		label: 'Правила',
 		width: '147px',
 		className: 'mainButton',
+		hoverColor: '#94ABFA',
 	},
 	{
 		path: '/reviews',
@@ -32,6 +35,7 @@ export const routes = [
 		label: 'Отзывы',
 		width: '147px',
 		className: 'mainButton',
+		hoverColor: '#94ABFA',
 	},
 ];
 

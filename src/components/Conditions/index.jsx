@@ -13,6 +13,7 @@ export default function Conditions() {
 							to={routes[0].path}
 							className={styles[routes[0].className]}
 							style={{ width: routes[0].width }}
+							hoverColor={routes[0].hoverColor}
 						>
 							{routes[0].label}
 						</ActiveButton>
@@ -24,6 +25,7 @@ export default function Conditions() {
 								to={route.path}
 								className={styles[route.className]}
 								style={{ width: route.width }}
+								hoverColor={route.hoverColor}
 							>
 								{route.label}
 							</ActiveButton>

@@ -7,15 +7,33 @@ import styles from './index.module.css';
 const activeButtonTitle = [
 	{
 		id: 1,
-		title: 'Игроки 0/15',
+		title: 'Назад',
+		backgroundColor: '#8897CC',
+		hoverColor: '#394779',
 	},
 	{
 		id: 2,
-		title: 'Баланс: 100 млн',
+		title: 'Игроки 0/15',
+		backgroundColor: '#1C3486',
+		hoverColor: '#1C3486',
 	},
 	{
 		id: 3,
+		title: 'Баланс: 100 млн',
+		backgroundColor: '#1C3486',
+		hoverColor: '#1C3486',
+	},
+	{
+		id: 4,
 		title: 'Не более 2 игроков из одного клуба',
+		backgroundColor: '#1C3486',
+		hoverColor: '#1C3486',
+	},
+	{
+		id: 5,
+		title: 'Сравнить',
+		backgroundColor: '#8897CC',
+		hoverColor: '#394779',
 	},
 ];
 
@@ -27,18 +45,35 @@ export default function TeamPlayerMap() {
 					<FootballField />
 
 					<div className={styles.buttonContainer}>
-						{activeButtonTitle.map(({ title, id }) => (
-							<div style={{ textAlign: 'center' }}>
-								<ActiveButton key={id}>{title}</ActiveButton>
-							</div>
-						))}
+						{activeButtonTitle.map(
+							({ title, id, backgroundColor, hoverColor }) => (
+								<div
+									key={id}
+									style={{
+										textAlign: 'center',
+									}}
+								>
+									<ActiveButton
+										style={{
+											backgroundColor: backgroundColor,
+										}}
+										hoverColor={hoverColor}
+									>
+										{title}
+									</ActiveButton>
+								</div>
+							)
+						)}
 					</div>
 				</div>
 				{/*FILTER CONTAINER*/}
 				<div className={styles.containerFilterPlayer}>
 					<PlayersInfoPanel />
-					<ActiveButton style={{ width: '187px', backgroundColor: '#132152' }}>
-						Далее
+					<ActiveButton
+						style={{ width: '187px', backgroundColor: '#161C32' }}
+						hoverColor={'#394779'}
+					>
+						Вперед!
 					</ActiveButton>
 				</div>
 			</div>
