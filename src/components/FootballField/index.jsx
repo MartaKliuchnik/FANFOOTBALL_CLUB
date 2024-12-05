@@ -3,36 +3,61 @@ import player from '../../assets/t_shirt_1.png';
 import styles from './index.module.css';
 
 const playerPositions = [
-	{ left: '35%', top: '27%' },
-	{ left: '47%', top: '27%' },
-	{ left: '59%', top: '27%' },
-	{ left: '23%', top: '43%' },
-	{ left: '35%', top: '43%' },
-	{ left: '47%', top: '43%' },
-	{ left: '59%', top: '43%' },
-	{ left: '71%', top: '43%' },
-	{ left: '23%', top: '60%' },
-	{ left: '35%', top: '60%' },
-	{ left: '47%', top: '60%' },
-	{ left: '59%', top: '60%' },
-	{ left: '71%', top: '60%' },
-	{ left: '28%', top: '75%' },
-	{ left: '65%', top: '75%' },
+	{ left: '31%', top: '30%' },
+	{ left: '50%', top: '30%' },
+	{ left: '69%', top: '30%' },
+	{ left: '14%', top: '48%' },
+	{ left: '31%', top: '48%' },
+	{ left: '50%', top: '48%' },
+	{ left: '69%', top: '48%' },
+	{ left: '86%', top: '48%' },
+	{ left: '14%', top: '66%' },
+	{ left: '31%', top: '66%' },
+	{ left: '50%', top: '66%' },
+	{ left: '69%', top: '66%' },
+	{ left: '86%', top: '66%' },
+	{ left: '31%', top: '85%' },
+	{ left: '69%', top: '85%' },
 ];
+
+function removePlayer(index) {
+	console.log(`Remove player at index: ${index}`);
+}
+
+function showPlayerInfo(index) {
+	console.log(`Show info for player at index: ${index}`);
+}
 
 export default function FootballField() {
 	return (
 		<div className={styles.imgContainer}>
-			<img className={styles.imgField} src={footballField} />
+			<img
+				className={styles.imgField}
+				src={footballField}
+				alt='football field'
+			/>
 
 			{playerPositions.map((position, index) => (
-				<img
-					src={player}
-					alt='player'
+				<div
 					key={index}
+					className={styles.playerContainer}
 					style={{ left: position.left, top: position.top }}
-					className={styles.imgPlayer}
-				/>
+				>
+					<img src={player} alt='player' className={styles.imgPlayer} />
+
+					<div className={styles.playerInfo}>
+						<div className={styles.playerName}>Холланд</div>
+						<div className={styles.playerCost}>8.0 млн</div>
+					</div>
+
+					<div className={styles.iconRemove}>
+						<button onClick={() => removePlayer(index)}>×</button>
+					</div>
+
+					<div className={styles.iconInfo}>
+						<button onClick={() => showPlayerInfo(index)}>i</button>
+					</div>
+				</div>
 			))}
 		</div>
 	);

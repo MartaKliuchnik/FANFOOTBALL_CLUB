@@ -1,4 +1,3 @@
-import React from 'react';
 import FootballField from '../FootballField';
 import PlayersInfoPanel from '../PlayersInfoPanel';
 import ActiveButton from '../UI/ActiveButton';
