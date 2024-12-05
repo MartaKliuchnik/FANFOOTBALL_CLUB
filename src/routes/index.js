@@ -1,8 +1,8 @@
-import CreateTeamPage from '../Pages/CreateTeamPage/index.jsx';
-import HomePage from '../Pages/HomePage/index.jsx';
-import PrizePage from '../Pages/PrizePage/index.jsx';
-import ReviewsPage from '../Pages/ReviewsPage/index.jsx';
-import RulesPage from '../Pages/RulesPage/index.jsx';
+// import CreateTeamPage from '../pages/CreateTeamPage/index.jsx';
+import HomePage from '../pages/HomePage/index.jsx';
+import PrizePage from '../pages/PrizePage/index.jsx';
+import ReviewsPage from '../pages/ReviewsPage/index.jsx';
+import RulesPage from '../pages/RulesPage/index.jsx';
 
 export const routes = [
 	{

@@ -3,7 +3,8 @@ import { Context } from '../../context';
 import Header from '../Header';
 import Conditions from '../Conditions';
 import { routes } from '../../routes/index';
-import HomePage from '../../Pages/HomePage';
+import HomePage from '../../pages/HomePage';
+import LobbyPage from '../../pages/LobbyPage';
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Conditions />
 			<Routes>
 				<Route path='/' element={<HomePage />} />
+				<Route path='/lobby' element={<LobbyPage />} />
 				{routes.map(({ path, element: Element }) => (
 					<Route key={path} path={path} element={<Element />} />
 				))}

@@ -1,4 +1,5 @@
 .conditions {
+	max-width: 1920px;
 	background: var(--secondary-bg-color);
 	padding: 0 15px;
 	height: 90px;
