@@ -6,33 +6,24 @@ import styles from './index.module.css';
 const activeButtonTitle = [
 	{
 		id: 1,
-		title: 'Назад',
-		backgroundColor: '#8897CC',
-		hoverColor: '#394779',
-	},
-	{
-		id: 2,
 		title: 'Игроки 0/15',
 		backgroundColor: '#1C3486',
 		hoverColor: '#1C3486',
+		width: '203px',
 	},
 	{
-		id: 3,
+		id: 2,
 		title: 'Баланс: 100 млн',
 		backgroundColor: '#1C3486',
 		hoverColor: '#1C3486',
+		width: '228px',
 	},
 	{
-		id: 4,
+		id: 3,
 		title: 'Не более 2 игроков из одного клуба',
 		backgroundColor: '#1C3486',
 		hoverColor: '#1C3486',
-	},
-	{
-		id: 5,
-		title: 'Сравнить',
-		backgroundColor: '#8897CC',
-		hoverColor: '#394779',
+		width: '252px',
 	},
 ];
 
@@ -42,34 +33,48 @@ export default function TeamPlayerMap() {
 			<div className={styles.wrapper}>
 				<div className={styles.containerField}>
 					<FootballField />
-
-					<div className={styles.buttonContainer}>
-						{activeButtonTitle.map(
-							({ title, id, backgroundColor, hoverColor }) => (
-								<div
-									key={id}
-									style={{
-										textAlign: 'center',
-									}}
-								>
-									<ActiveButton
-										style={{
-											backgroundColor: backgroundColor,
-										}}
-										hoverColor={hoverColor}
-									>
-										{title}
-									</ActiveButton>
-								</div>
-							)
-						)}
-					</div>
-				</div>
-				{/*FILTER CONTAINER*/}
-				<div className={styles.containerFilterPlayer}>
 					<PlayersInfoPanel />
+				</div>
+
+				<div className={styles.buttonsWrapper}>
+					<div className={styles.buttonsPanel}>
+						<ActiveButton
+							style={{ backgroundColor: '#8897CC' }}
+							hoverColor={'#394779'}
+						>
+							Назад
+						</ActiveButton>
+						<div className={styles.buttonContainer}>
+							{activeButtonTitle.map(
+								({ title, id, backgroundColor, hoverColor, width }) => (
+									<div
+										key={id}
+										style={{
+											textAlign: 'center',
+										}}
+									>
+										<ActiveButton
+											style={{
+												backgroundColor: backgroundColor,
+												width: width,
+											}}
+											hoverColor={hoverColor}
+										>
+											{title}
+										</ActiveButton>
+									</div>
+								)
+							)}
+						</div>
+						<ActiveButton
+							style={{ backgroundColor: '#8897CC' }}
+							hoverColor={'#394779'}
+						>
+							Сравнить
+						</ActiveButton>
+					</div>
 					<ActiveButton
-						style={{ width: '187px', backgroundColor: '#161C32' }}
+						style={{ backgroundColor: '#161C32' }}
 						hoverColor={'#394779'}
 					>
 						Вперед!

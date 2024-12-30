@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import ActiveButton from '../UI/ActiveButton';
 import styles from './index.module.css';
 
+// eslint-disable-next-line react/prop-types
 export default function DeadlineTimer({ initialTime }) {
 	const [time, setTime] = useState(initialTime);
 
